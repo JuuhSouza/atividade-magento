@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+ }
+
+/* informativo */
+
+.container{
+    margin: auto;
+    padding: 0 2em;
+    display: grid;
+    justify-content: center;
+}
+
+.card{
+    margin-top: 10em;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    background: #335f73;
+    margin-bottom: 2em;
+    text-align: justify;
+    max-width: 1100px;
+    max-height: 600px;
+    border-radius: 10%;
+}
+
+.card p{
+    font-size: 15px;
+    margin-top: -3em;
+    letter-spacing: 1px;
+}
+
+img{
+    width: 100%;
+    
+}
+
+.card img{
+    border-radius: 20%;
+    height: 400px;
+    width: 400px;
+   /*  margin-left: 50px;
+    margin-top: 30px; */
+
+}
+
+img:nth-child(1){
+    margin-left: 60px;
+    margin-top: 35px;
+}
+
+.card h3{
+    margin-top: -10px;
+    margin-bottom: 2em;
+    font-size: 2em;
+    color: #DB6804;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+
+#serviços{
+    margin-top: 20px;
+}
+
+#funciona{
+    margin-top: 20px;
+}
+
+.card div{
+    padding: 2em;
+}
+
+.card:nth-child(even) img{
+    order: 2
+}
+
+a{
+    color: #000000;  
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #DB6804;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+a:hover{
+    filter: opacity(10%);
+    text-decoration: none; 
+    transition: 0.4s ease;
+} 
+
+
+/* manu */
+
+.menu img{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    display: inline-block;
+    margin:0 20px;
+    padding: 1em;
+    background-color: #DB6804;
+    border-radius: 20%;
+}
+
+.menu li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out; 
+    
+}
+
+.menu input{
+    display: inline-block;
+    margin:0 20px;
+    padding: 1em;
+    background-color: #F2BE24;
+    border-radius: 2em;
+    font-size: 1.3em;
+}
+
+.menu li:hover{
+    box-shadow: 0 0 25px #DB6804;
+    color: #ffffff;
+
+}
+
+.menu li a:hover{
+    color: #ffffff;
+ 
+}
+
+.menu input:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+    /* final menu */
+
+    /* texto */
+.texto {
+        text-align: center;
+        padding: 6em;
+    }
+    
+.texto h2 {
+    color: #335F73;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.texto p {
+    color: #000000;
+    font-size: 1em;
+    font-weight: 500;
+    }
+    
+/* texto */
+
+    /* background animado */
+    .wrapper{
+        position: absolute;
+        width: 100%;
+        height: 250%;
+        overflow: hidden;
+
+    }
+    
+    .box div{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        border: 6px solid #5b8c796c;
+        
+    }
+    
+    .box div:nth-child(1){
+        top: 12%;
+        left: 42%;
+        animation: animate 10s linear infinite;
+    }
+    
+    .box div:nth-child(2){
+        top: 70%;
+        left: 50%;
+        animation: animate 7s linear infinite;
+    }
+    
+    .box div:nth-child(3){
+        top: 17%;
+        left: 6%;
+        animation: animate 9s linear infinite;
+    }
+    
+    .box div:nth-child(4){
+        top: 20%;
+        left: 60%;
+        animation: animate 10s linear infinite;
+    }
+    
+    .box div:nth-child(5){
+        top: 67%;
+        left: 10%;
+        animation: animate 6s linear infinite;
+    }
+    
+    .box div:nth-child(6){
+        top: 80%;
+        left: 70%;
+        animation: animate 12s linear infinite;
+    }
+    
+    .box div:nth-child(7){
+        top: 60%;
+        left: 80%;
+        animation: animate 15s linear infinite;
+    }
+    .box div:nth-child(8){
+        top: 32%;
+        left: 25%;
+        animation: animate 16s linear infinite;
+    }
+    
+    .box div:nth-child(9){
+        top: 90%;
+        left: 25%;
+        animation: animate 9s linear infinite;
+    }
+    
+    .box div:nth-child(10){
+        top: 20%;
+        left: 80%;
+        animation: animate 5s linear infinite;
+    }
+    
+    
+    @keyframes animate{
+        0%{
+            transform: scale(0) translateY(0) rotate(0);
+            opacity: 1;
+        }
+    
+        100%{
+            transform: scale(1.3) translateY(-90px) rotate(360deg);
+            opacity: 1;
+        }
+    }
+
+     /* fianl background animado */
+
+     /* footer */
+
+footer{
+    padding: 1.2em;
+    font-size: 1.1em;
+    color: #000000;
+    font-weight: 500;
+    box-shadow: 0 0 25px #DB6804;
+    margin-top: 0px;
+    text-align: center;
+}
+     /* final footer */
